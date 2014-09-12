@@ -32,7 +32,7 @@ clean-test:
 	rm -fr htmlcov/
 
 lint:
-	flake8 featurevectormatrix tests
+	flake8 --config=flake8.cfg .
 
 test:
 	python setup.py test
