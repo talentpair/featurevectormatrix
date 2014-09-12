@@ -21,7 +21,7 @@ test_requirements = [
 
 setup(
     name='featurevectormatrix',
-    version='0.1.0',
+    version='0.1.1',
     description='Python class to encapsulate different representations of large datasets',
     long_description=readme + '\n\n' + history,
     author='Jeremy Robin',
