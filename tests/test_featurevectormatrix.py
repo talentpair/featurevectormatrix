@@ -10,7 +10,7 @@ Tests for `featurevectormatrix` module.
 
 import unittest
 
-from featurevectormatrix import FeatureVectorMatrix
+from featurevectormatrix.featurevectormatrix import FeatureVectorMatrix
 
 v3 = [1, 2, 3]
 v4 = [1, 2, 3, 4]
