@@ -1,4 +1,0 @@
-Feature Vector Matrix
-===================
-
-Feature
