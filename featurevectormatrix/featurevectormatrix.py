@@ -2,6 +2,7 @@
 
 import numpy as np
 
+
 class FeatureVectorMatrix(object):
     """ A class to abstract away the differences in internal representation between dictionaries and lists that can matter for very large datasets
      of vectors and allow them to work seamlessly with each other
@@ -31,7 +32,7 @@ class FeatureVectorMatrix(object):
 
     def default_to_hashed_rows(self, default=None):
         if default is not None:
-            self._default_to_hashed_rows = (default == True)
+            self._default_to_hashed_rows = (default is True)
 
         return self._default_to_hashed_rows
 
@@ -257,7 +258,8 @@ class FeatureVectorMatrix(object):
             return self.get_row_list(idx)
 
     def __iter__(self):
-        """ A generator for iterating over the rows. It should behave as expected - if the top level data structure has all keyed rows, return keys rather than the rows themselves
+        """ A generator for iterating over the rows. It should behave as expected - if the top level data structure has all keyed rows,
+        return keys rather than the rows themselves
 
         :return: a generator for iterating over the rows
         """
