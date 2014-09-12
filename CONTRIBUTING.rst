@@ -76,7 +76,7 @@ Ready to contribute? Here's how to set up `featurevectormatrix` for local develo
 
 5. When you're done making changes, check that your changes pass flake8 and the tests, including testing other Python versions with tox::
 
-    $ flake8 featurevectormatrix tests
+    $ flake8 --config=flake8.cfg .
     $ python setup.py test
     $ tox
 
