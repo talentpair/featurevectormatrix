@@ -1,4 +1,4 @@
-featurevectormatrix
+Feature Vector Matrix
 ===================
 
-Python class to encapsulate different representations of large datasets
+Feature
