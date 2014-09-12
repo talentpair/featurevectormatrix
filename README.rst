@@ -8,9 +8,6 @@ Feature Vector Matrix
 .. image:: https://travis-ci.org/talentpair/featurevectormatrix.png?branch=master
         :target: https://travis-ci.org/talentpair/featurevectormatrix
 
-.. image:: https://pypip.in/d/featurevectormatrix/badge.png
-        :target: https://pypi.python.org/pypi/featurevectormatrix
-
 
 Python class to encapsulate different representations of large datasets
 

@@ -10,7 +10,7 @@ Tests for `featurevectormatrix` module.
 
 import unittest
 
-from featurevectormatrix.featurevectormatrix import FeatureVectorMatrix
+from featurevectormatrix import FeatureVectorMatrix
 
 v3 = [1, 2, 3]
 v4 = [1, 2, 3, 4]
@@ -213,6 +213,7 @@ class TestFeatureVectorMatrix(unittest.TestCase):
 
     def test_matrix(self):
         fvm = FeatureVectorMatrix()
+        fvm.set_column_names(c3)
         fvm.add_row(d3, 'one')
         fvm.add_row(d4, 'two')
         fvm.add_row(d4, 'three')
@@ -227,11 +228,11 @@ class TestFeatureVectorMatrix(unittest.TestCase):
         self.assertEquals(3, rfvm.column_count())
         self.assertEquals(4, rfvm.row_count())
 
-        self.assertEquals(rfvm.get_row_dict(2), {'three': 2, 'two': 2, 'one': 2})
+        self.assertEquals(rfvm.get_row_dict(2), {'three': 3, 'two': 3, 'one': 3})
         self.assertEquals(rfvm.get_row_dict(3), {'two': 4, 'three': 4})
 
         self.assertEquals(rfvm.column_names(), ['one', 'two', 'three'])
-        self.assertEquals(rfvm.get_row_list(2), [2, 2, 2])
+        self.assertEquals(rfvm.get_row_list(2), [3, 3, 3])
         self.assertEquals(rfvm.get_row_list(3), [0, 4, 4])
 
         fvm2 = rfvm.transpose()
