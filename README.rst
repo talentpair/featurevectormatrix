@@ -5,8 +5,8 @@ Feature Vector Matrix
 .. image:: https://badge.fury.io/py/featurevectormatrix.png
     :target: http://badge.fury.io/py/featurevectormatrix
 
-.. image:: https://travis-ci.org/robustican/featurevectormatrix.png?branch=master
-        :target: https://travis-ci.org/robustican/featurevectormatrix
+.. image:: https://travis-ci.org/talentpair/featurevectormatrix.png?branch=master
+        :target: https://travis-ci.org/talentpair/featurevectormatrix
 
 .. image:: https://pypip.in/d/featurevectormatrix/badge.png
         :target: https://pypi.python.org/pypi/featurevectormatrix

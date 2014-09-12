@@ -26,7 +26,7 @@ setup(
     long_description=readme + '\n\n' + history,
     author='Jeremy Robin',
     author_email='jeremy.robin@gmail.com',
-    url='https://github.com/robustican/featurevectormatrix',
+    url='https://github.com/talentpair/featurevectormatrix',
     packages=[
         'featurevectormatrix',
     ],
