@@ -8,10 +8,11 @@ import numpy as np
 
 
 class FeatureVectorMatrix(object):
-    """ A class to abstract away the differences in internal representation between dictionaries and lists that can matter for very large datasets
-     of vectors and allow them to work seamlessly with each other
+    """ A class to abstract away the differences in internal representation between dictionaries and lists that can matter
+    for very large datasets of vectors and allow them to work seamlessly with each other
 
-     Supports indexing and iteration (fvm[1] and for i in fvm:...) but you should set default_to_hash_rows to get the expected behavior.  Also supports len
+    Supports indexing and iteration (fvm[1] and for i in fvm:...) but you should set default_to_hash_rows to get the
+    expected behavior.  Also supports len
     """
 
     def __init__(self, default_value=0, default_to_hashed_rows=False, rows=None):

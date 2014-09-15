@@ -5,13 +5,17 @@ language: python
 python:
   - "2.7"
 
-# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
+cache:
+  directories:
+    - $HOME/.pip-cache/
+    - $HOME/virtualenv/python2.7
+    - $HOME/virtualenv/python2.7.8
+
 install:
-  - pip install -r requirements.txt
+  - pip install -r requirements.txt  --download-cache $HOME/.pip-cache
 
 before_script:
   - make lint
 
-# command to run tests, e.g. python setup.py test
 script:
   - make test
