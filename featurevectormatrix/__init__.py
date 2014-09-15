@@ -37,6 +37,11 @@ class FeatureVectorMatrix(object):
             self.extend_rows(rows)
 
     def default_to_hashed_rows(self, default=None):
+        """ Gets the current setting with no parameters, sets it if a boolean is passed in
+
+        :param default: the value to set
+        :return: the current value, or new value if default is set to True or False
+        """
         if default is not None:
             self._default_to_hashed_rows = (default is True)
 
@@ -148,7 +153,7 @@ class FeatureVectorMatrix(object):
     def extend_rows(self, list_or_dict):
         """ Add multiple rows at once
 
-        :param list_or_dict: a 2 minensional structure for adding multiple rows at once
+        :param list_or_dict: a 2 dimensional structure for adding multiple rows at once
         :return:
         """
         if isinstance(list_or_dict, list):
