@@ -20,3 +20,4 @@ Features
 * Python class to encapsulate different representations of large datasets
 * Rows can be inserted as python dictionaries or arrays
 * They can be pulled out as dictionaries or arrays
+* Supports pythonix indexing, len, and iteration
