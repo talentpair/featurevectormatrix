@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
+from featurevectormatrix import __version__
 try:
     from setuptools import setup
 except ImportError:
@@ -21,7 +21,7 @@ test_requirements = [
 
 setup(
     name='featurevectormatrix',
-    version='0.1.1',
+    version=__version__,
     description='Python class to encapsulate different representations of large datasets',
     long_description=readme + '\n\n' + history,
     author='Jeremy Robin',
